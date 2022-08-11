@@ -1,0 +1,26 @@
+import boto3
+import json
+
+def lambda_handler(event, context):
+      client = boto3.resource("dynamodb")
+      try:
+            table = client.Table("customer_ids")
+      
+            input_id = str(event['id'])
+                  
+            input = {'id': input_id}
+            response = table.put_item(Item=input)
+            
+            #response for succssesfuly to put iten into DynamoDB table.
+            return {
+            'statusCode': 200,
+            'body': 'successfully created item!'
+            }
+            
+      except Exception as e: 
+                  return {
+                    'statusCode': 400,
+                    'message': "table not found"
+                  }      
+
+
