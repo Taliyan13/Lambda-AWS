@@ -24,38 +24,38 @@ AWS services, Python and Dynamo DB .
  ** PUT request - 
 3. PUT request function - insert new ID into the company DynamoDB table
 
-3.1. use boto3,json librarise
+    3.1. use boto3,json librarise
 
-3.2. the function serch the customer_ids table and add the user ID to there.
+    3.2. the function serch the customer_ids table and add the user ID to there.
 
-3.3. if the table name was found - ID insert to customer_ids table and we will receive json with status code 200, and msg body for sucssesful.
+    3.3. if the table name was found - ID insert to customer_ids table and we will receive json with status code 200, and msg body for sucssesful.
 
-3.4. if the table name not found - user will not insert into customer_ids table, and we will receive json with status code 400, and msg body for table not found. 
+    3.4. if the table name not found - user will not insert into customer_ids table, and we will receive json with status code 400, and msg body for table not found. 
 
-3.5. **running via Postman API Platform code **
+    3.5. **running via Postman API Platform code **
 
-here you can see the Postman command for run PUT request function with ID "211" -
-curl --location --request PUT 'https://2j8o0g1s0l.execute-api.eu-west-2.amazonaws.com/dev/customers/211'
-     **running via Postman API Platform code **
-     
- **GET request 
-4. GET request function - search ID in customer_ids table
+    here you can see the Postman command for run PUT request function with ID "211" -
+    curl --location --request PUT 'https://2j8o0g1s0l.execute-api.eu-west-2.amazonaws.com/dev/customers/211'
+         **running via Postman API Platform code **
 
-4.1. use boto3,json,botocore librarise 
+     **GET request 
+    4. GET request function - search ID in customer_ids table
 
-4.2. the function recive from user an ID, serch him in customer_ids table and return json msg.
+    4.1. use boto3,json,botocore librarise 
 
-4.3. if table exsist and user found there - we will receive json with user id.
+    4.2. the function recive from user an ID, serch him in customer_ids table and return json msg.
 
-4.4. if table exsists but user not - we will receive json with status code 404, and msg  for customer ID not found.
+    4.3. if table exsist and user found there - we will receive json with user id.
 
-4.5. if table not exsists- we will receive json with status code 400, and msg  for table not found.
+    4.4. if table exsists but user not - we will receive json with status code 404, and msg  for customer ID not found.
 
-4.6. **running via Postman API Platform code **
+    4.5. if table not exsists- we will receive json with status code 400, and msg  for table not found.
 
-the Postman command for run GET request function with ID "211" -
-curl --location --request GET 'https://2j8o0g1s0l.execute-api.eu-west-2.amazonaws.com/dev/customers/211'
-     **running via Postman API Platform code **
+    4.6. **running via Postman API Platform code **
+
+    the Postman command for run GET request function with ID "211" -
+    curl --location --request GET 'https://2j8o0g1s0l.execute-api.eu-west-2.amazonaws.com/dev/customers/211'
+         **running via Postman API Platform code **
 
 
   * Mission 2: 
