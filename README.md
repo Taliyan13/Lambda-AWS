@@ -39,13 +39,10 @@ curl --location --request PUT 'https://2j8o0g1s0l.execute-api.eu-west-2.amazonaw
 4.4. if table exsists but user not - we will receive json with status code 404, and msg  for customer ID not found.
 4.5. if table not exsists- we will receive json with status code 400, and msg  for table not found.
 4.6. **running via Postman API Platform code **
-here you can see the Postman command for run GET request function with ID "211" -
+
+the Postman command for run GET request function with ID "211" -
 curl --location --request GET 'https://2j8o0g1s0l.execute-api.eu-west-2.amazonaws.com/dev/customers/211'
      **running via Postman API Platform code **
- ** Lambda GET & PUT functions - 
-5.I added Lambda GET and PUT functions to Git - https://github.com/Taliyan13/Lambda-AWS/tree/main
-
-
 
 
   * Mission 2: 
