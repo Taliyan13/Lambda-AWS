@@ -39,7 +39,7 @@ AWS services, Python and Dynamo DB .
          **running via Postman API Platform code **
 
      **GET request 
-    4. GET request function - search ID in customer_ids table
+4. GET request function - search ID in customer_ids table
 
     4.1. use boto3,json,botocore librarise 
 
