@@ -15,7 +15,7 @@ deploy a static website using a NGINX server on an Ubuntu machine.
 
 ## Usage
 
-A step-by-step guide on how to use your project.
+AWS services, Python and Dynamo DB .
 
 ## Contributing
  * Mission 1 - 
